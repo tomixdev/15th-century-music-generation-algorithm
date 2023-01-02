@@ -1,13 +1,13 @@
 # Music Generation Algorithm from Renaissance Italy (Dec 2020)
-Musicians thought about automated music generation algorithms even before the advent of electricity. This project implements the 15th-century Italian algorithm for imitative texture generation. Potential applications in today's context including healing music generator and automated film background music. 
+Musicians have been exploring music generation algorithms since even before the invention of electricity. This project implements the 15th-century Italian algorithm for generating imitative textures. Potential applications in today's context include a healing music generator and automated film background music. 
 
 
 # How to Use 
-Open `src-renaissance/--generation-ui.maxpat`. This will automatically load dependencies and set up a simple UI. Set `midiout` port to your preferred midi instruments. 
+Open `src-renaissance/--generation-ui.maxpat`. This will automatically load dependencies and set up a simple UI. Set `midiout` to your preferred midi port. 
 
 
 # Markov Property
-The essence of the Renaissance melody generation algorithm is a Markov stochastic process. The beginning note of each measure has to have a certain relationship with the beginning note of the previous measure as explained in the chart below:
+The essence of the Renaissance melody generation algorithm is a Markov stochastic process. The beginning note of each measure has to have a certain relationship with the beginning note of the previous measure, as explained in the chart below:
 
 ![](./media-for-readme/--collins-imitation-chart.png)
 (Interval chart from a paper by Denis Collins: see the references section)
@@ -22,15 +22,15 @@ A single-voice melody can look like:
 Melodies generated in this way is capable of generating a polyphonic texture; they create beautiful vertical harmonies when imitated by certain intervals. 
 
 
-# Music Demo (Turn Video Audio **ON** to listen!)
+# Music Generation Demo (Turn Video Audio **ON** to listen!)
 Turn video audio **ON** to listen!
 
 https://user-images.githubusercontent.com/80517718/210160387-6308ceb5-121b-43dd-998c-6fd7b704254f.mov
 
 # Byproduct: js-vec-str-ops-helpers package
-Array operations in Max tend to be the most frustrating part of the entire programming process in Max. Documentations (especially in `zl` objects) are hard to find. Similar operations sometimes require different objects with different usages. There also are many hard-to-debug implicit limitations. 
+Array operations in Max can be the most frustrating part of the entire programming process in Max. Documentation for certain objects, such as `zl` objects, is hard to find. Similar operations often require different objects with different usages. There are also many hard-to-debug implicit limitations. 
 
-In this package, I implemented 36 functions to be accessible from the js object interface in Max. Some functions even have Max patch wrapper for those who do not know js in Max. Documentations and an independent github page are to come next!
+In this package, I implemented 36 functions that can be accessed from the JavaScript (`js`) interface in Max. Some functions even have a Max patch wrapper for those who are not familiar with JavaScript. Detailed documentation and an independent github page will be available in the future!
 
 
 # References
